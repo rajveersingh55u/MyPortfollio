@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #e09b40;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links :hover {
+    color: #000;
+}
+
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    text-align: center;
+    color: white;
+}
+
+.hero span {
+    color: rgb(11, 26, 240);
+    font-weight: bold;
+    animation: forwards 1s ease-in-out 0.5s slideIn;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-90px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+}
+.btn:hover {
+    background: #665f5f;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #eee;
+    border-radius: 20px;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: #75db21;
+}
+/* Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
